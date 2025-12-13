@@ -2,26 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Generator</title>
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <h1>✨Portfolio Generator✨</h1>
-            <p>Build a professional portfolio</p>
-            <p> with just a few clicks.</p><br>
-            <a href="create.html" class="start-btn">Get Started</a>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <!-- Header/Hero Section -->
+    <header class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto text-center">
+            <!-- Logo/Title with animation -->
+            <div class="mb-8 animate-fade-in">
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 leading-tight">
+                    Portfolio Generator
+                </h1>
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <span class="text-2xl">✨</span>
+                    <p class="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium">
+                        Build a professional portfolio
+                    </p>
+                    <span class="text-2xl">✨</span>
+                </div>
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8">
+                    with just a few clicks
+                </p>
+            </div>
+            
+            <!-- Feature Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
+                <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Lightning Fast</h3>
+                    <p class="text-gray-600 text-sm">Create your portfolio in minutes, not hours</p>
+                </div>
+                <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Fully Responsive</h3>
+                    <p class="text-gray-600 text-sm">Looks perfect on all devices and screen sizes</p>
+                </div>
+                <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Modern Design</h3>
+                    <p class="text-gray-600 text-sm">Beautiful, professional templates</p>
+                </div>
+            </div>
+            
+            <!-- CTA Button -->
+            <a href="create.html" class="inline-block px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:from-blue-700 hover:to-purple-700">
+                Get Started →
+            </a>
         </div>
     </header>
 
-       <!-- Footer Section -->
-       <footer class="footer">
-            <p>&copy; 2024 Portfolio Generator. All rights reserved.</p>
-            <p>Created with ❤️ by Sohan Kafle</p>
+    <!-- Footer Section -->
+    <footer class="bg-white/50 backdrop-blur-sm py-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600 mb-2">&copy; 2024 Portfolio Generator. All rights reserved.</p>
+            <p class="text-gray-500">Created with ❤️ by Sohan Kafle</p>
+        </div>
     </footer>
+
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fade-in 1s ease-out;
+        }
+    </style>
 </body>
 </html>
