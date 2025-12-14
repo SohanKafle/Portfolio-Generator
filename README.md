@@ -18,10 +18,8 @@ Check out the live demo of the Portfolio Generator Web App:
 - **Tools**: Clean and minimalistic design approach for an intuitive user experience
 
 ## 📸 Screenshots
-### Portfolio Creation Page
-<img src="https://github.com/user-attachments/assets/339fb856-85dd-4008-b078-9ee81af1a9aa" alt="Get started" width="50%" align="left" />
+<img src="https://github.com/user-attachments/assets/fae06941-c96b-4e8d-94f0-429d09182adc" alt="Get started"/>
 
-<br clear="left" />
 
 ## 📜 License
 This project is licensed under the [MIT License](LICENSE).
