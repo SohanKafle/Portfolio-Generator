@@ -21,19 +21,70 @@
     </script>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
-    <div class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-        <!-- Header -->
-        <div class="max-w-5xl mx-auto mb-8">
-            <div class="text-center mb-8">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-                    Create Your Portfolio
-                </h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Fill in the details to generate your portfolio page instantly
-                </p>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html"><div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg overflow-hidden">
+                        <img src="image/logo.png" alt="Logo" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                        Portfolio Generator
+                    </span>
+                </div></a>
+                <a href="index.html" class="hidden sm:flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-all duration-200">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Home</span>
+                </a>
+                
             </div>
         </div>
+    </nav>
 
+    <!-- Header Section -->
+    <section class="relative pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl"></div>
+            <div class="absolute top-20 right-1/4 w-96 h-96 bg-purple-200/40 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Main Title -->
+            <div class="mb-8">
+                
+                <h1 class="text-5xl sm:text-6xl font-bold mb-6 leading-tight">
+                    <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                        Build Your Professional Portfolio
+                    </span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Complete the form below to generate a polished, responsive portfolio website tailored to showcase your skills and experience.
+                </p>
+            </div>
+            
+            <!-- Feature Pills -->
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <div class="px-5 py-2.5 bg-white rounded-full shadow-md border border-gray-100 flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-gray-700">Simple & Efficient</span>
+                </div>
+                <div class="px-5 py-2.5 bg-white rounded-full shadow-md border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-mobile-alt text-blue-600 text-sm"></i>
+                    <span class="text-sm font-medium text-gray-700">Fully Responsive</span>
+                </div>
+                <div class="px-5 py-2.5 bg-white rounded-full shadow-md border border-gray-100 flex items-center gap-2">
+                    <i class="fas fa-download text-purple-600 text-sm"></i>
+                    <span class="text-sm font-medium text-gray-700">Ready to Deploy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="pb-20 px-4 sm:px-6 lg:px-8">
         <!-- Form Container -->
         <div class="max-w-5xl mx-auto">
             <div class="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12">
