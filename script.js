@@ -213,7 +213,7 @@ function generatePortfolio(event) {
     <footer class="bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm py-8 border-t border-gray-200 dark:border-slate-700 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-gray-600 dark:text-gray-400 mb-2">
-                &copy; 2024 ${name}. All rights reserved.
+                &copy; ${new Date().getFullYear()} ${name}. All rights reserved.
             </p>
             <p class="text-gray-500 dark:text-gray-400">
                 Thanks for visiting ❤️
